@@ -1,8 +1,5 @@
-# Compiled class file
-*.class
 
-# Log file
-*.log
+*.class
 
 # BlueJ files
 *.ctxt
@@ -20,3 +17,50 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+
+/target-eclipse/classes
+.gradle
+/web-app/WEB-INF/classes
+/target/
+.tmp/
+/classes/
+/out/
+bin/
+/test/unit
+/test/integration
+/overlays/
+/db/
+.classpath
+.settings/
+.asscache
+.project
+.idea/
+.sonar/
+.DS_Store
+*.iml
+*.ipr
+*.jar
+*.iws
+*.swp
+*.log
+*.log\.*
+plugin.xml
+*.zip
+.sonar
+
+src/user-guide/target
+node_modules
+bower_components
+.sass-cache
+.slcache
+exportToHTML
+
+build
+
+application.yml
+application-dev.yml
+*.tar.gz
+*.tgz
+
+dev

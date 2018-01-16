@@ -1,0 +1,14 @@
+
+providers:
+  - name:             yourAliyunAccountAlias
+    type:             aliyun
+    accessKeyId:      xxxxxxxxxxx
+    accessKeySecret:  xxxxxxxxxxxxxxxxxxxxxx
+    regionId:         cn-hangzhou
+    domains:
+      - test.xyz
+      - test.net
+      - test.link
+      - test.wang
+
+

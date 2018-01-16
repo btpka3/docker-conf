@@ -1,0 +1,28 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3"
+
+services:
+  nginx:
+    deploy:
+      replicas: 2
+      resources:
+        memory: 50m
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+        window: 90s
+      ports:
+        - 80:80
+        - 443:443
+      volumes:
+        - V_NGINX_CONF:/etc/nginx
+        - V_NGINX_STORE_HTML:/usr/share/nginx/html:ro
+        - V_NGINX_STORE_LOG:/var/log/nginx:rw
+
+network:
+  my-network:
+
+volumes:
+  - V_NGINX_CONF:/data0/conf/soft/nginx/prod
+  - V_NGINX_STORE_HTML:/data0/store/soft/nginx/html
+  - V_NGINX_STORE_LOG:/data0/store/soft/nginx/log
